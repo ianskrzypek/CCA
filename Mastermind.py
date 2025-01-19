@@ -108,7 +108,7 @@ Enter the number of your choice: """)
                 while len(userguess) != 4:
                     print(list(colors.values()))
                     inputcolors=input("\nPlease input the first letter of a color from the above list to add it to your guess: ")
-                    if inputcolors.lower in colors:
+                    if inputcolors in colors:
                         userguess.append(colors[inputcolors.lower()])
                         print("Input Successful")
                     else:
